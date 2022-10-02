@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 800px) {
   .hero-banner-container {
-    height: 560px;
+    height: 600px;
   }
 
   .hero-banner-image {
@@ -83,5 +83,11 @@
 @media (max-width: 700px) {
   .hero-banner-image {
     top: 10rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-banner-image {
+    top: 14rem;
   }
 }
