@@ -1,0 +1,63 @@
+
+.banner-desc {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-desc button {
+  border-radius: 2px;
+  padding: 10px 16px;
+  background-color: white;
+  color: cornflowerblue;
+  border: none;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.banner-desc .left h3 {
+  font-weight: 900;
+  font-size: 80px;
+  margin-left: 25px;
+}
+.banner-desc .left p {
+  margin: 18px;
+}
+
+.banner-desc .right {
+  line-height: 1.4;
+}
+.banner-desc .right h3 {
+  font-weight: 800;
+  font-size: 60px;
+}
+.banner-desc .right p {
+  font-size: 18px;
+}
+.banner-desc .right .company-desc {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 800px) {
+  .banner-desc .left h3 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 5px;
+  }
+  .banner-desc .left p {
+    margin: 18px;
+  }
+  .banner-desc .right h3 {
+    font-size: 45px;
+  }
+  .banner-desc .right p {
+    font-size: 18px;
+  }
+  .banner-desc .right .company-desc {
+    font-size: 14px;
+  }
+  .banner-desc {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
