@@ -95,6 +95,8 @@ const Cart = () => {
               <h3>Subtotal:</h3>
               <h3>${totalPrice}</h3>
             </div>
+            <p>Demo CC#: 4242 4242 4242 4242 </p>
+            <p>Exp: 4/24 CID: 424</p>
             <div className='btn-container'>
               <button type='button' className='btn' onClick={handleCheckout}>
                 Pay with Stripe

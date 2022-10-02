@@ -11,6 +11,10 @@ body,
   width: 0px;
 }
 
+body {
+  background-color: gainsboro;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -68,7 +72,8 @@ span.text-cornflowerblue {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
+  color: black;
+  font-style: italic;
   font-size: 18px;
 }
 .cart-icon {
@@ -113,8 +118,8 @@ span.text-cornflowerblue {
   transform: scale(1.1, 1.1);
 }
 .product-image {
-  border-radius: 15px;
-  background-color: #ebebeb;
+  border-radius: 2px;
+  background-color: ghostwhite;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
@@ -130,8 +135,8 @@ span.text-cornflowerblue {
 
 .hero-banner-container {
   padding: 100px 40px;
-  background-color: #dcdcdc;
-  border-radius: 15px;
+  background-color: gold;
+  border-radius: 2px;
   position: relative;
   height: 500px;
   line-height: 0.9;
@@ -141,7 +146,7 @@ span.text-cornflowerblue {
   font-size: 20px;
 }
 .hero-banner-container button {
-  border-radius: 15px;
+  border-radius: 2px;
   padding: 10px 16px;
   background-color: cornflowerblue;
   color: white;
@@ -160,7 +165,7 @@ span.text-cornflowerblue {
 .hero-banner-container h1 {
   color: white;
   font-size: 10em;
-  margin-left: -20px;
+  /* margin-left: -20px; */
   text-transform: uppercase;
 }
 .hero-banner-image {
@@ -207,9 +212,9 @@ span.text-cornflowerblue {
   font-weight: 200;
 }
 .footer-banner-container {
-  padding: 100px 40px;
+  padding: 50px 20px;
   background-color: cornflowerblue;
-  border-radius: 15px;
+  border-radius: 2px;
   position: relative;
   height: 400px;
   line-height: 1;
@@ -222,7 +227,7 @@ span.text-cornflowerblue {
   justify-content: space-between;
 }
 .banner-desc button {
-  border-radius: 15px;
+  border-radius: 2px;
   padding: 10px 16px;
   background-color: white;
   color: cornflowerblue;
@@ -341,8 +346,8 @@ span.text-cornflowerblue {
 .product .cart-product-image {
   width: 180px;
   height: 150px;
-  border-radius: 15px;
-  background-color: #ebebeb;
+  border-radius: 2px;
+  background-color: ghostwhite;
 }
 .item-desc .flex {
   display: flex;
@@ -389,7 +394,7 @@ span.text-cornflowerblue {
   width: 100%;
   max-width: 400px;
   padding: 10px 12px;
-  border-radius: 15px;
+  border-radius: 2px;
   border: none;
   font-size: 20px;
   margin-top: 10px;
@@ -413,8 +418,8 @@ span.text-cornflowerblue {
 }
 
 .product-detail-image {
-  border-radius: 15px;
-  background-color: #ebebeb;
+  border-radius: 2px;
+  background-color: ghostwhite;
 
   width: 400px;
   height: 400px;
@@ -422,7 +427,7 @@ span.text-cornflowerblue {
   transition: 0.3s ease-in-out;
 }
 .product-detail-image:hover {
-  background-color: cornflowerblue;
+  background-color: gold;
 }
 .small-images-container {
   display: flex;
@@ -431,17 +436,17 @@ span.text-cornflowerblue {
 }
 .small-image {
   border-radius: 8px;
-  background-color: #ebebeb;
+  background-color: ghostwhite;
   width: 70px;
   height: 70px;
   cursor: pointer;
 }
 
 .selected-image {
-  background-color: cornflowerblue;
+  background-color: gold;
 }
 .reviews {
-  color: cornflowerblue;
+  color: gold;
   margin-top: 10px;
   display: flex;
   gap: 5px;
@@ -462,7 +467,7 @@ span.text-cornflowerblue {
   font-weight: 700;
   font-size: 26px;
   margin-top: 30px;
-  color: cornflowerblue;
+  color: black;
 }
 .price .old-price,
 .product-price .old-price,
@@ -556,7 +561,7 @@ span.text-cornflowerblue {
 }
 .success-wrapper,
 .cancel-wrapper {
-  background-color: white;
+  background-color: gainsboro;
   min-height: 60vh;
 }
 .success,
@@ -566,7 +571,7 @@ span.text-cornflowerblue {
   margin-top: 160px;
   background-color: #dcdcdc;
   padding: 50px;
-  border-radius: 15px;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -613,20 +618,24 @@ span.text-cornflowerblue {
     height: 560px;
   }
   .hero-banner-image {
-    width: 77%;
-    height: 62%;
-    top: -2%;
-    right: -6%;
+    width: clamp(10rem, 60vmin, 35rem);
+    height: clamp(10rem, 60vmin, 35rem);
+    top: clamp(2rem, 6vh, 8rem);
+    /* right: 2vw; */
+    transform: translateX(10vw);
   }
   .footer-banner-container {
-    height: 560px;
+    height: fit-content;
     margin-top: 80px;
   }
   .footer-banner-image {
-    width: 77%;
-    left: 30%;
+    /* width: 77%; */
+    /* left: 30%; */
+    /* height: 56%; */
+    width: clamp(5rem, 40vmin, 20rem);
+    height: clamp(5rem, 40vmin, 20rem);
+    transform: translateX(30vw);
     top: 6%;
-    height: 56%;
   }
   .banner-desc .left h3 {
     font-weight: 900;
@@ -748,5 +757,11 @@ span.text-cornflowerblue {
   .btn-container {
     width: 300px;
     margin: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-banner-image {
+    top: 10rem;
   }
 }
