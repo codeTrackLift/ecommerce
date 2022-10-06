@@ -27,6 +27,7 @@
   font-size: 30px;
   display: flex;
   gap: 10px;
+  z-index: 1;
 }
 
 .footer-banner-image {
@@ -43,12 +44,6 @@
     width: clamp(5rem, 40vw, 20rem);
     height: auto;
     transform: translate(-80%, -60%);
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .footer-banner-image {
-    /* transform: translate(60%,0); */
   }
 }
 
