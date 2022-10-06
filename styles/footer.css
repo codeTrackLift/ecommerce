@@ -30,6 +30,10 @@
   z-index: 1;
 }
 
+.footer-shopping-cart {
+  transform: translate(0, 0.5rem);
+}
+
 .footer-banner-image {
   /* top: 5rem; */
   width: clamp(10rem, 35vw, 50rem);

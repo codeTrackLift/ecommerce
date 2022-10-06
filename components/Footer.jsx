@@ -1,13 +1,17 @@
 import React from 'react'
-import { AiOutlineTwitter, AiFillYoutube } from 'react-icons/ai';
+import { AiOutlineTwitter, AiFillYoutube, AiOutlineShoppingCart } from 'react-icons/ai';
 
 const urlTwitter = 'https://twitter.com/codeTrackLift'
 const urlYoutube = 'https://www.youtube.com/channel/UCVDOFoM5NXYrPoC02lbNJ-Q'
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className='footer-container'>
-      <p>2022 E-commerce Store</p>
+      <p style={{fontStyle: 'italic'}}>
+        Copyright © {currentYear} <AiOutlineShoppingCart size={25} className='footer-shopping-cart' /> shopByPete
+      </p>
       <p className='icons'>
         <a href={urlYoutube} target='_blank' rel='noreferrer'>
           <AiFillYoutube />
