@@ -30,31 +30,34 @@
 }
 
 .footer-banner-image {
-  top: 5rem;
-  width: clamp(10rem, 25vw, 50rem);
-  height: auto;
+  /* top: 5rem; */
+  width: clamp(10rem, 35vw, 50rem);
+  /* height: auto; */
   margin: 0 auto;
   display: block;
-  transform: translate(-100%, -50%);
+  transform: translate(-100%, -60%);
 }
 
 @media screen and (max-width: 900px) {
   .footer-banner-image {
-    width: clamp(5rem, 40vmin, 20rem);
+    width: clamp(5rem, 40vw, 20rem);
     height: auto;
-    transform: translate(2rem,-5rem);
+    transform: translate(-80%, -60%);
   }
 }
 
 @media screen and (max-width: 800px) {
-  .footer-banner-container {
-    height: fit-content;
+  .footer-banner-image {
+    /* transform: translate(60%,0); */
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
   .footer-banner-container {
     height: fit-content;
     margin-top: 80px;
+  }
+  .footer-banner-image {
+    transform: translate(20%,0);
   }
 }
