@@ -8,7 +8,7 @@
   line-height: 0.9;
   width: 100%;
 }
-.hero-banner-container .beats-solo {
+.hero-banner-container .small-text {
   font-size: 20px;
 }
 .hero-banner-container button {
@@ -37,9 +37,9 @@
 
 .hero-banner-image {
   position: absolute;
-  top: 5vmin;
+  top: 2vmin;
   right: 15vw;
-  width: clamp(20rem, 30vmin, 50rem);
+  width: clamp(20rem, 50vmin, 50rem);
   height: auto;
   transform: rotate(180deg) rotateY(180deg)
 }
@@ -56,7 +56,7 @@
   }
 
   .hero-banner-image {
-    width: clamp(10rem, 60vmin, 35rem);
+    width: clamp(10rem, 50vw, 35rem);
     height: auto;
     top: clamp(2rem, 6vh, 8rem);
     transform: translateX(10vw) rotate(180deg) rotateY(180deg);
@@ -87,7 +87,19 @@
 }
 
 @media (max-width: 575px) {
+  .hero-banner-container {
+    padding: 50px 20px;
+  }
+
   .hero-banner-image {
     top: 14rem;
+    transform: translate(5vw, 0rem) rotate(180deg) rotateY(180deg);
+  }
+}
+
+@media (max-width: 300px) {
+  .hero-banner-image {
+    top: 14rem;
+    transform: translate(15vw, 5rem) rotate(180deg) rotateY(180deg);
   }
 }
