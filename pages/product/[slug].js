@@ -12,10 +12,12 @@ import { useStateContext } from '../../context/StateContext'
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
-  const { decQty, incQty, qty, setQty, onAdd, setShowCart} = useStateContext();
+  const { decQty, incQty, qty, setQty, onAdd, setShowCart, totalQuantities} = useStateContext();
 
   const handleBuyNow = () => {
-    onAdd(product, qty);
+    if(totalQuantities === 0) {
+      onAdd(product, qty);
+    }
     setShowCart(true);
   }
 
